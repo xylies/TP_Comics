@@ -1,0 +1,186 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* scroll bars */
+* {
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #3598DB #FFF;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3598DB;
+    outline: 1px solid slategrey;
+}
+
+
+
+/*css reset style*/
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: url(/assets/HWu44Bv.png)no-repeat fixed center center / cover;
+
+}
+
+body {
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: lighter;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+details,
+summary,
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
+a {
+    color: #222;
+}
+
+/* theme */
+
+:root {
+    --color-header-target: #f55a3c;
+    --color-link: #333;
+    --color-header: #3598DB;
+}
+
+header,
+main {
+    max-width: 80rem;
+    border: .1rem solid transparent;
+    margin: 0 auto;
+    background-color: transparent;
+    background-color: rgba(254, 251, 253, 0.85);
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.75);
+}
+
+header {
+    margin: 0 auto 0;
+    padding: .5rem;
+}
+
+main {
+    padding: .5rem;
+}
+
+header h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 5rem 0;
+    font-family: 'Zhi Mang Xing';
+}
+
+header h1::before {
+    content: '\002605';
+    color: #f55a3c;
+    margin-right: .5rem;
+}
+
+section h2,
+nav h2 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--color-header);
+    line-height: 4.5rem;
+    padding: .5rem;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0 .3rem 0 #457895;
+    font-family: 'Zhi Mang Xing';
+    font-size: 3rem ;
+}
+
+section h2::after,
+nav h2::after {
+    content: '\00203A';
+    margin-left: .5rem;
+}
+
+nav ol li {
+    text-transform: capitalize;
+    line-height: 2.5rem;
+}
+
+section img {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+section p {
+    padding: 3rem 1rem;
+    line-height: 2.6rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section div {
+    padding-bottom: .5rem;
+}
+
+.histoire:target {
+    background-color: var(--color-header-target);
+    box-shadow: 0 .3rem 0 #b03927;
+}
+
+.histoire {
+    transition-duration: 0.8s;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+
+    header,
+    main {
+        width: auto;
+    }
+
+    nav ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ol li {
+        background-color: #222;
+        margin-bottom: .1rem;
+        padding-left: .5rem;
+        line-height: 3.5rem;
+    }
+
+    nav ol li a {
+        display: block;
+        color: #fff;
+    }
+}
